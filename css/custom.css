@@ -1,0 +1,247 @@
+/* imports */
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+body { padding-top: 50px; }
+
+a {
+  color: #37b2ef;
+}
+
+a:hover {
+  color: #5095b4;
+}
+
+/* NAV */
+
+.navbar-default {
+  background-color: #FAFCFC;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  color: #374958;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
+  color: #A9D4E7;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: #374958;
+  transition-duration: 0.3s;
+}
+
+.navbar-brand {
+  font-size: 1.6em;
+  font-weight: 600;
+  font-family: 'Righteous', cursive;
+}
+
+.navbar-brand>img {
+  display: inline;
+  width: 25px;
+}
+
+.navbar-nav>li>a {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.1em;
+}
+
+/* jumbotron */
+
+.jumbotron {
+  margin: 0;
+  background: url(../img/bg1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
+}
+
+.jumbotron>.container {
+  padding-top: 150px;
+}
+
+.jumbotron h1 {
+  color: #374958;
+  text-shadow: 0 0 10px #FAFCFC;
+  font-family: 'Righteous', cursive;
+}
+
+.jumbotron h2 {
+  color: #d8910a;
+  font-family: 'Questrial', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  background: rgb(250,252,252); /* Fall-back for browsers that don't
+                                    support rgba */
+  background: rgba(250,252,252, .5);
+}
+.jumbotron a{
+  text-decoration: none;
+}
+
+.jumbotron .btn {
+  background-color: #374958;
+  color: #FAFCFC;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.jumbotron .btn:hover {
+  background-color: #FAFCFC;
+  color: #374958;
+  border: none;
+}
+
+.jumbotron hr{
+   border-top: 1px solid #374958;
+}
+
+
+/* about */
+
+.about {
+  background: url(../img/bg4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about img {
+  width: 70%;
+  border-radius: 130px;
+  margin: 100px;
+}
+
+.about p {
+  padding: 10px;
+  margin: 70px 10px 30px 0 ;
+  color: #374958;
+  font-size: 2em;
+  background: rgb(250,252,252); /* Fall-back for browsers that don't
+                                    support rgba */
+  background: rgba(250,252,252, .5);
+}
+
+.about a {
+  color: #005e8d;
+}
+
+/* portfolio */
+
+.portfolio {
+  background: url(../img/bg3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio>.container {
+  padding: 100px 0 100px 0;
+
+}
+
+.thumbnail {
+  background: rgb(250,252,252); /* Fall-back for browsers that don't
+                                    support rgba */
+  background: rgba(250,252,252, .8);
+}
+
+.thumbnail img {
+  max-height: 200px;
+}
+/* contact */
+
+.contact {
+  background: url(../img/bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+}
+
+.contact address {
+  margin: 140px 100px;
+  font-size: 2em;
+  font-weight: 700;
+  text-shadow: 1px 1px 10px #ffffff;
+  color: #223240;
+}
+
+.contact address a {
+  padding-left: 10px;
+  color: #356c9d;
+  text-shadow: 1px 1px 10px #e3cdcd;
+}
+
+.contact-btn {
+  padding-top: 80px;
+}
+
+.contact .btn{
+  width: 150px;
+  margin: 5px;
+  background-color: #374958;
+  color: #FAFCFC;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.contact .btn:hover {
+  background-color: #FAFCFC;
+  color: #374958;
+  border: none;
+}
+
+/* footer */
+
+.footer {
+  padding: 20px 0;
+  background-color: #FAFCFC;
+  color: #4a4444;
+  font-weight: 200;
+
+}
+/* mobile */
+
+@media(max-width:767px){
+  .jumbotron>.container {
+  padding-top: 75px;
+  }
+
+  .about p {
+    margin:  30px 0;
+  }
+
+  .about img{
+    margin: 50px 15% 30px 15%;
+  }
+
+  .contact address {
+    margin: 50px auto;
+  }
+
+  .contact address {
+  margin: 50px 15% 10px 15%;
+  font-size: 2rem;
+  }
+
+  .contact address a {
+    padding: 0;
+    font-size: 2rem;
+  }
+
+}
+
+
+@media(max-width:345px){
+  .contact {
+  height: auto;
+  }
+}
